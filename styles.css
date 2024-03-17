@@ -93,6 +93,13 @@ padding: 15px;
         align-items: center;
     }
 
+    .monster1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
 
     .monster-selection input {
         margin-top: 10px;
@@ -155,6 +162,12 @@ padding: 15px;
     background-color: var(--main-color);
     border: 1px solid var(--accent-color);
     text-align: center;
+}
+
+
+.create-tamagotchi-btn {
+    margin-top: 0px;
+    color: var(--second-color)
 }
 
 
