@@ -471,6 +471,7 @@ padding: 15px;
 
 .notification-box {
     width: 80vw;
+    padding: 0 10px;
 }
 
 };
