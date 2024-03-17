@@ -94,6 +94,10 @@ padding: 15px;
         margin-top: 10px;
     }
 
+    .monster-selection > div {
+        text-align: center; /* Center the content inside each monster div */
+    }
+
 .monster1 input {
     align-items: center;
 }
