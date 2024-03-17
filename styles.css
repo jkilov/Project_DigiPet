@@ -323,7 +323,7 @@ padding: 15px;
 
 /* Pet Mobile */
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 400px) {
 
     body {
        
@@ -388,6 +388,7 @@ padding: 15px;
     .background-night {
         background-image: url(background-night1.jpeg);
         background-size: cover;
+
         margin: 0;
     }
 
@@ -441,6 +442,7 @@ padding: 15px;
 
 .game-controls {
     display: none; 
+    width: 100vw;
       position: absolute;
       top: 0;
       left: 0;
