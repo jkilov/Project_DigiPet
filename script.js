@@ -63,7 +63,7 @@ button2.addEventListener("click", function (e){
         console.log(tamagotchiName)
         notifications.innerText = tamagotchiName + " is happy and healthy. Be sure to give them lots of attention "
         petImg.style.display = "block"
-        gameControls.style.display = "block"
+        gameControls.style.display = "flex" //change this if needed
     } else if (!monsterSelected){
         e.preventDefault();
         alert("Please Select A Pet");
