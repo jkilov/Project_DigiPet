@@ -93,12 +93,9 @@ padding: 15px;
         align-items: center;
     }
 
-    .monster1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
+.monster1 input {
+    align-items: center;
+}
 
 
     .monster-selection input {
