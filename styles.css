@@ -69,7 +69,8 @@ button {
 
 
 .gender-select input {
-    margin-left: 1px;
+    margin-left: 10px;
+    margin-right: 0px;
 }
 
 .gender-select label {
@@ -92,8 +93,9 @@ padding: 15px;
         align-items: center;
     }
 
+
     .monster-selection input {
-        margin-top: 5px;
+        margin-top: 10px;
 
     }
 
