@@ -1,0 +1,454 @@
+html {
+
+--main-color: #FFF7EC;
+--second-color: #1C1B1F;
+--accent-color: #8652FF;
+
+
+
+
+}
+
+
+.background-day {
+    background-image: url(background.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+
+.background-night {
+    background-image: url(background-night1.jpeg);
+    background-size: cover;
+    margin: 0;
+}
+
+
+h1 {
+    font-family: Titan One;
+}
+
+button {
+    background-color: var(--accent-color);
+    border-radius: 40px;
+    padding: 10px;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+/* Login Screen */
+
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.welcome-elements {
+    background-color: var(--main-color);
+    background-image: url(background-layer.png);
+    padding: 56px;
+    border-radius: 40px 40px 40px 40px;
+    text-align: center;
+    display: none;
+}
+
+.welcome-elements-2 {
+    background-color: var(--main-color);
+    background-image: url(background-layer.png);
+    border-radius: 40px 40px 40px 40px;
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+
+   
+}
+
+.welcome-form-elements div{
+padding: 15px;
+}
+
+.welcome-form-elements {
+    font-family: open sans;
+    font-weight: 800;
+}
+
+    .monster-selection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .petDiv{
+        width: 50vw;
+    }
+
+    .monster1 {
+        flex-direction: column;
+        border: 1px solid var(--second-color);
+        width: 15%;
+        padding: 0%;
+        margin: 10px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--main-color);
+    }
+
+    .monster1 img {
+        width: 90%;
+    }
+        
+
+    .monster2 {
+        flex-direction: column;
+        border: 1px solid var(--second-color);
+        width: 15%;
+        padding: 0%;
+        margin: 10px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--main-color);
+    }
+
+    .monster2 img {
+        width: 80%;
+    }
+    .monster3 {
+        flex-direction: column;
+        border: 1px solid var(--second-color);
+        width: 15%;
+        padding: 0%;
+        margin: 10px;
+        border-radius: 20px 20px 20px 20px;
+        background-color: var(--main-color);
+    }
+
+    .monster3 img {
+        width: 80%;
+    }
+
+.welcome-form-elements button {
+   margin-top: 50px
+}
+
+.welcome-form-elements input {
+    border-radius: 40px;
+    padding: 5px 20px;
+    background-color: var(--main-color);
+    border: 1px solid var(--accent-color);
+    text-align: center;
+}
+
+
+/* main game  */
+
+.game-controls {
+  display: none; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+    background-image: url(background-layer.png);
+    border-radius: 40px 40px 40px 40px;
+    font-family: open sans;
+    font-size: 10px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.levelHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.status-bar h2{
+    display: inline;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.game-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.game-btns button {
+    margin: 20px 10px;
+  
+}
+
+.notification-box {
+    background-color: var(--main-color);
+    border: 2px solid var(--second-color);
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.level-header {
+    font-size: 76px;
+    z-index: 1;
+    position: absolute;
+    top: 30vh;
+    left: 60vh;
+    text-align: center;
+    display: none;
+    
+}
+
+.level-header {
+    color: var(--accent-color);
+    -webkit-animation: rotate 1s forwards; /* Safari and Chrome */
+    animation: rotate 1s infinite; 
+
+}
+
+
+/* Pet Desktop  */
+
+.pet-img{
+
+        width: 15%;
+        position: absolute;
+        top: 50%;
+        display: none;
+
+    }
+
+    .sleepingPet {
+        display: none;
+        position: absolute;
+        top: 50%;
+    }
+
+    /* Feeding Pet */
+
+.scaleUp {
+    -webkit-animation: scaleUpPet 1s forwards; /* Safari and Chrome */
+    animation: scaleUpPet 1s forwards; 
+    animation-iteration-count: 2;
+}
+
+
+
+
+.foodAnimation {
+    position: absolute;
+    top: 25%;
+    left: 46.8%;
+    display: none;
+}
+
+.drinkAnimation {
+    position: absolute;
+    top: 35%;
+    left: 52%;
+    width: 10%;
+    display: none;
+}
+
+.sportAnimation {
+    position: absolute;
+    width: 10%;
+    top: 56%;
+    right: 45%;
+    z-index: 1;
+    display: none;
+
+
+}
+
+.zzzSleep{
+    position: absolute;
+    bottom: 20%;
+    display: none;
+}
+
+
+/* Pet Mobile */
+
+@media only screen and (max-width: 400px) {
+
+    body {
+       
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+
+  
+    .game-screen {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .pet-img {
+        width: 50%;
+    position: absolute;
+    top: 50%;
+    display: none;
+    left: 30%;
+
+    }
+
+    
+
+    /* Homescreen: Pet Selection Mobile */
+
+    .welcome-elements-2{
+        width: 100vw;
+    }
+
+    .form-inside {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+
+    .status-bar{
+        text-align: center;
+    }
+
+    .notifications {
+        text-align:center;
+    }
+
+
+
+    .petDiv {
+        width: 100vw;
+    }
+    
+    .background-day {
+        background-image: url(background.jpeg);
+        background-size: cover;
+        margin: 0;
+    }
+    
+    .background-night {
+        background-image: url(background-night1.jpeg);
+        background-size: cover;
+        margin: 0;
+    }
+
+.pet-organisation {
+    display: flex;
+    justify-content: center;
+}
+
+.foodAnimation {
+
+    display: none;
+    width: 30%;
+    bottom: 40%;
+    top: 50%;
+    left: 8%;
+
+}
+
+.drinkAnimation {
+    width: 30%;
+    top: 50%;
+    left: 8%;
+    z-index: 1;
+}
+
+.sportAnimation {
+    position: absolute;
+    width: 30%;
+    top: 60%;
+    left: 12%;
+    z-index: 1;
+    display: none;
+
+}
+
+.sleepingPet {
+    display: none;
+    position: absolute;
+    top: 60%;
+    width: 80%;
+    left: 10%;
+}
+
+.zzzSleep{
+    width: 40%;
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    display: none;
+}
+
+.game-controls {
+    display: none; 
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--main-color);
+      background-image: url(background-layer.png);
+      border-radius: 40px 40px 40px 40px;
+      font-family: open sans;
+      font-size: 10px;
+      padding: 20px 10px;
+      flex-direction: column;
+      align-items: center;
+
+}
+
+.level-header {
+    position: absolute;
+    left: 25%;
+    font-size: 30px;
+    z-index: 1;
+    display: none;
+   
+
+
+}
+
+};
+
+
+
+
+
+
+
+
+/* Animations */
+
+@keyframes scaleUpPet {
+    0% {
+        transform: scale(1);
+    }
+   50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateX(45deg);
+    }
+
+    50% {
+        transform: rotateX(-90deg)
+    }
+    100% {
+        transform: rotateX(0deg)
+}
+};

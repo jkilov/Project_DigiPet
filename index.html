@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap" rel="stylesheet">
+</head>
+<body class="background-day">
+
+<!-- Login Page -->
+
+<div class="login-screen">
+    <div class="welcome-elements">
+        <h1>Welcome to your Tamagotchi!</h1>
+        <button class="start-btn">Click here to start!</button>
+    </div>
+
+    <!-- welcome details page -->
+
+    <div class="welcome-elements-2">
+        
+        <h1>Create your Tamagotchi:</h1>
+        <div class="welcome-form-elements">
+            <form class="formPetSelect" id="form">
+                <div class="form-inside">
+                <div>
+                <label>Name:</label>
+                <input class="tamagotchi-name" type="text" placeholder="Enter Name Here">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" name="gender">
+                <label> Male</label>
+                <input type="radio" name="gender">
+                <label> Female</label>
+            </div>
+            <div class="petDiv">
+                <label> Select Your Pet</label>
+                <div class="monster-selection">
+                    <div class="monster1">
+                        <img src="monster.gif" alt="" id="petImg1">
+                        <input type="radio" name="pet" id="pet1" >
+            </div>
+            <div class="monster2">
+                <img src="monster2.gif" alt="" id="petImg2" >
+                <input type="radio" name="pet" id="pet2">
+            </div>
+            <div class="monster3">
+                <img src="monster3.gif" alt="" id="petImg3" >
+                <input type="radio" name="pet" id="pet3">
+            </div>
+            </div>
+            </div>
+            <!-- <div>
+                <label>Choose Tamagotchi Type:</label>
+                <input type="text" placeholder="Enter Name Here">
+            </div> -->
+
+            <button type="submit" class="create-tamagotchi-btn">Create Tamagotchi</button>
+        </div>
+    
+            </form>
+    </div>
+    </div>
+
+<!-- main Game -->
+
+<div class="game-screen">
+    <div class="game-controls">
+        <div class="levelHeader">
+            <h1 class="level-status">Level 1</h1>
+        </div>
+        <div class="status-bar">
+            <h2 class="thirst-status">Thirst: <strong>0</strong></h2>
+            <h2 class = "food-status">Food: <strong>0</strong></h2>
+            <h2 class="happiness-status">Happiness: <strong>0</strong></h2>
+            <h2 class="tired-status">Energy: <strong>100</strong></h2>
+            <h2 class="money-status">Money: <strong>80</strong></h2>
+        </div>
+        <div class = "game-btns">
+            <button class="feed-pet-btn">Feed Pet</button>
+            <button class="buy-toys-btn">Play Sport</button>
+            <button class="sleep-btn">Go To Sleep</button>
+        </div>
+        <div class="notification-box">
+            <p class="notifications"></p>
+        </div>
+    </div>
+    <div class="level-header">
+        <h1 class="level-header-text">Level 1</h1>
+    </div>
+        <div class="pet-organisation">
+    </div>
+        <div class="food-falling">
+        <img class="foodAnimation" src="food.gif" alt="">
+        <img class="drinkAnimation" src="drink.gif">
+        <img class="sportAnimation" src="toy.gif">
+    </div>
+    <div class="pet">
+        <img class="pet-img"src="" alt="">
+        <img class="sleepingPet" src="tent.png" alt="">
+    </div>
+    <img class ="zzzSleep" src="zzz.gif" alt="">
+</div>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
