@@ -67,6 +67,15 @@ button {
    
 }
 
+
+.gender-select input {
+    margin-left: 1px;
+}
+
+.gender-select label {
+    padding-right: 10px;;
+}
+
 .welcome-form-elements div{
 padding: 15px;
 }
@@ -177,7 +186,8 @@ padding: 15px;
 
 .game-btns button {
     margin: 20px 10px;
-  
+    color: #FFF7EC;
+    
 }
 
 .notification-box {
