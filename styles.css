@@ -194,7 +194,7 @@ padding: 15px;
 .game-controls {
   display: none; 
     position: absolute;
-    width: 100vw;
+
     top: 0;
     left: 0;
     background-color: var(--main-color);
