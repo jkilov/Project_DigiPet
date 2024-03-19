@@ -367,9 +367,19 @@ padding: 15px;
 
 
 
-    .status-bar{
-        text-align: center;
+    .status-bar {
+        display: flex;
+        justify-content: space-around;
     }
+    
+
+
+  
+    .s2 {
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
 
     .notifications {
         text-align:center;
