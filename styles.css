@@ -194,6 +194,7 @@ padding: 15px;
 .game-controls {
   display: none; 
     position: absolute;
+    width: 400px;
 
     top: 0;
     left: 0;
